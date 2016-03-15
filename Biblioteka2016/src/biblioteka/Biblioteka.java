@@ -10,6 +10,7 @@ public class Biblioteka implements BibliotekaInterfejs{
 
 	@Override
 	public void dodajKnjigu(Knjiga knjiga) {
+		//Ne sme biti duplikata
 		if (knjiga == null || knjige.contains(knjiga)){
 			throw new RuntimeException("Greska pri unosu knjige.");
 		}
